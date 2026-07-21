@@ -28,8 +28,8 @@ Python 從零實作核心演算法。
 
 | Folder | Topic | Summary |
 |--------|-------|---------|
-| [HW1](HW1/) | Camera Calibration（相機校正） | From-scratch camera calibration using DLT + SVD (no `cv2.calibrateCamera`): recovers intrinsic matrix K and per-image extrinsics [R\|t] from chessboard images, with both a static matplotlib pipeline and an interactive Dash 3-D viewer of camera/board poses in world and camera coordinate frames. Includes a written report and results on both the provided dataset and custom smartphone-captured photos. |
-| [HW2](HW2/python/) | Structure from Motion（運動恢復結構） | End-to-end SfM pipeline: correspondence matching, RANSAC fundamental matrix estimation, essential matrix decomposition and pose selection, triangulation, and textured 3-D mesh export (.obj/.mtl, viewable in Blender). Run via `python main.py mesona` / `python main.py statue` from `HW2/python/`. |
+| [HW1](HW1/) | Camera Calibration（相機校正） | From-scratch camera calibration using DLT + SVD (no `cv2.calibrateCamera`), following Zhang's method: recovers intrinsic matrix K and per-image extrinsics [R\|t] from chessboard images, with both a static matplotlib pipeline and an interactive Dash 3-D viewer of camera/board poses in world and camera coordinate frames. Includes a written report (`report.typ`, Typst format) and result figures (`figures/`, `output/`) on both the provided dataset and custom smartphone-captured photos. |
+| [HW2](HW2/python/) | Structure from Motion（運動恢復結構） | End-to-end SfM pipeline: SIFT correspondence matching, RANSAC-based normalized 8-point fundamental matrix estimation, essential matrix decomposition with a cheirality test, linear triangulation, and textured 3-D mesh export (.obj/.mtl, viewable in Blender). Run via `python main.py mesona` / `python main.py statue` from `HW2/python/`; outputs are generated at runtime, not checked into the repo. |
 
 ## Notes
 
